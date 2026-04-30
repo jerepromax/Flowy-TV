@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flowy TV | Televisión en Vivo para Android</title>
+    <title>Flowy TV | Pagina oficial de Flowy TV</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         :root {
@@ -30,17 +30,20 @@
         }
 
         .app-icon {
-            width: 100px;
-            height: 100px;
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            border-radius: 24px;
+            width: 120px;
+            height: 120px;
             margin: 0 auto 20px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 3rem;
-            color: white;
-            box-shadow: 0 15px 35px rgba(106, 17, 203, 0.4);
+            filter: drop-shadow(0 10px 20px rgba(106, 17, 203, 0.4));
+        }
+
+        .app-icon img {
+            width: 100%;
+            height: 100%;
+            border-radius: 28px;
+            object-fit: cover;
         }
 
         h1 { font-size: 3rem; margin: 0; color: #fff; letter-spacing: -1px; }
@@ -55,6 +58,22 @@
             border-radius: 28px;
             border: 1px solid rgba(255,255,255,0.05);
             text-align: center;
+        }
+
+        .downloader-info {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px dashed var(--accent);
+        }
+
+        .downloader-code {
+            display: block;
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--accent);
+            letter-spacing: 2px;
         }
 
         .btn-download {
@@ -78,7 +97,6 @@
             background: var(--accent);
         }
 
-        /* Características Reales */
         .grid-features {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -99,7 +117,6 @@
 
         .f-item i { color: var(--accent); }
 
-        /* Sección Guía */
         .setup-guide {
             max-width: 600px;
             margin: 40px auto;
@@ -123,6 +140,7 @@
             justify-content: center;
             font-weight: bold;
             font-size: 0.8rem;
+            color: white;
         }
 
         footer {
@@ -132,7 +150,6 @@
             font-size: 0.8rem;
         }
 
-        /* Ajuste móvil */
         @media (max-width: 480px) {
             h1 { font-size: 2.2rem; }
             .grid-features { grid-template-columns: 1fr; }
@@ -142,52 +159,61 @@
 <body>
 
     <section class="hero">
-        <div class="app-icon"><i class="fas fa-satellite-dish"></i></div>
-        <div class="subtitle">Solo para dispositivos Android</div>
+        <div class="app-icon">
+            <img src="https://www.appcreator24.com/srv/imgs/gen/3982358_ico.png?v=7" alt="Logo Flowy TV">
+        </div>
+        <div class="subtitle">Pagina oficial de Flowy TV</div>
         <h1>Flowy TV</h1>
         <p style="max-width: 450px; margin: 15px auto; color: #aaa;">
-            Disfruta de tus canales favoritos en vivo con la mejor estabilidad. Diseñada exclusivamente para tu celular o tablet.
+            Disfruta de tus canales favoritos en vivo con la mejor estabilidad en tus dispositivos Android
         </p>
 
         <div class="download-box">
-            <a href="https://apk.e-droid.net/apk/app3982358-iwn6ys.apk?v=4" class="btn-download">
+            <!-- Sección de Código Downloader -->
+            <div class="downloader-info">
+                <span style="font-size: 0.8rem; text-transform: uppercase; opacity: 0.7;">Código Downloader para Android</span>
+                <span class="downloader-code">8483101</span>
+            </div>
+
+            <a href="https://apk.e-droid.net/apk/app3982358-iwn6ys.apk?v=7" class="btn-download">
                 <i class="fab fa-android"></i> DESCARGAR APK
             </a>
+            
             <div style="font-size: 0.8rem; color: #66ef66; margin-bottom: 20px;">
-                <i class="fas fa-check-circle"></i> Enlace directo y seguro
+                <i class="fas fa-check-circle"></i> Enlace oficial y seguro
             </div>
 
             <div class="grid-features">
                 <div class="f-item"><i class="fas fa-bolt"></i> Carga rápida</div>
-                <div class="f-item"><i class="fas fa-mobile-alt"></i> 100% Móvil</div>
-                <div class="f-item"><i class="fas fa-signal"></i> Señal en vivo</div>
-                <div class="f-item"><i class="fas fa-layer-group"></i> Interfaz simple</div>
+                <div class="f-item"><i class="fas fa-tv"></i> Facil de usar</div>
+                <div class="f-item"><i class="fas fa-signal"></i> Señal estable</div>
+                <div class="f-item"><i class="fas fa-layer-group"></i> Interfaz Pro</div>
             </div>
         </div>
     </section>
 
     <div class="setup-guide">
-        <h3 style="text-align: center; margin-bottom: 30px; color: #fff;">Instalación en 1 minuto</h3>
+        <h3 style="text-align: center; margin-bottom: 30px; color: #fff;">Instalación</h3>
         
         <div class="step">
             <div class="step-count">1</div>
-            <div><strong>Descarga:</strong> Pulsa el botón superior para bajar el archivo APK.</div>
+            <div><strong>Móvil:</strong> Descarga el APK desde el botón superior e instálalo permitiendo fuentes desconocidas.</div>
         </div>
 
         <div class="step">
             <div class="step-count">2</div>
-            <div><strong>Permisos:</strong> Al abrirlo, si Android te lo pide, permite la instalación desde "Fuentes Desconocidas".</div>
+            <div><strong>Downloader Android:</strong> Abre la app "Downloader" e ingresa el código <strong>8483101</strong> para descargar directamente.</div>
         </div>
 
         <div class="step">
             <div class="step-count">3</div>
-            <div><strong>¡Listo!</strong> Abre Flowy TV y sintoniza la televisión en directo.</div>
+            <div><strong>Disfruta:</strong> Abre Flowy TV y accede al mejor contenido en vivo.</div>
         </div>
     </div>
 
     <footer>
-        <p>Flowy TV &copy; 2024 - Versión Lite para Android</p>
-        <p>No requiere suscripciones complicadas. Solo descarga y mira.</p>
+        <p>Flowy TV &copy; 2026 - Desarrollado por Titan2022_XD En Reddit</p>
+        <p>Flowy TV Pagina actualizada 30/4/26 V7.</p>
     </footer>
 
 </body>
